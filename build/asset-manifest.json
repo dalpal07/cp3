@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.08140c04.css",
+    "main.js": "./static/js/main.3e6f65ca.js",
+    "static/js/787.6564431a.chunk.js": "./static/js/787.6564431a.chunk.js",
+    "static/media/kids-on-pencil.png": "./static/media/kids-on-pencil.cdbd0c19dc8b844bf497.png",
+    "static/media/studious-girl.png": "./static/media/studious-girl.1c2cd6daa0e884500a99.png",
+    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "./index.html",
+    "main.08140c04.css.map": "./static/css/main.08140c04.css.map",
+    "main.3e6f65ca.js.map": "./static/js/main.3e6f65ca.js.map",
+    "787.6564431a.chunk.js.map": "./static/js/787.6564431a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08140c04.css",
+    "static/js/main.3e6f65ca.js"
+  ]
+}

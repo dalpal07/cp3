@@ -1,25 +1,35 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/nav-bar.js';
+import Footer from './components/footer.js';
+import Home from './pages/home.js'
+import Play from './pages/play.js'
+import About from './pages/about.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {currentPage: "Home"}
+    
+    this.updateCurrentPage = this.updateCurrentPage.bind(this)
+  }
+  
+  updateCurrentPage(v) {
+    this.setState({currentPage: v.target.innerHTML});
+  }
+  
+  render() {
+    return (
+      <div className="App">
+        <NavBar page={this.state.currentPage} onClick={this.updateCurrentPage}/>
+        {this.state.currentPage === "Home" ? <Home/> : ""}
+        {this.state.currentPage === "Play" ? <Play/> : ""}
+        {this.state.currentPage === "About" ? <About/> : ""}
+        <Footer/>
+      </div>
+    );
+  }
 }
 
 export default App;

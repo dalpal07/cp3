@@ -1,0 +1,12 @@
+#about-img {
+    width:100%;
+    max-width:40em;
+}
+
+#about-info {
+    margin:1em;
+}
+
+#about-info>a {
+    color:black !important;
+}

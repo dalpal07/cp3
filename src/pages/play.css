@@ -1,0 +1,8 @@
+.games>button {
+    height:2em;
+    margin:.5em;
+    width:10em;
+    font-size:3em;
+    background-color:dimgray;
+    color:white;
+}
